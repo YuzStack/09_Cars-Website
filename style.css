@@ -84,6 +84,7 @@ header {
     box-shadow: rgba(2, 2, 2, 0.5) 0 0 10px;
     display: grid;
     grid-template-columns: 85% 15%;
+    color: #444A57;
 }
 
 .options-container {
@@ -127,7 +128,7 @@ header {
 
 /* Third Section Styling */
 .cards {
-    margin: 5rem 10rem;
+    margin: 5rem 10rem 8rem;
     display: flex;
     gap: 30px;
     text-align: center;
@@ -138,9 +139,10 @@ header {
 }
 
 .cards .unit-card {
-    border: black 0.1px solid;
+    border: #444A57 0.1px solid;
     height: 25rem;
     border-radius: 3px;
+    color: #444A57;
 }
 
 .cards img {
@@ -167,4 +169,54 @@ header {
 .unit-card .line-style:hover {
     background-color: white;
     color: white;
+}
+
+
+/* Fourth Section (latest cars section) Styling */
+.latest-cars-section {
+    background-color: #F8F9FB;
+    color: #444A57;
+}
+
+.latest-cars-section .heading {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.latest-cars-section .heading h3 {
+    font-size: 2.1rem;
+    margin-top: 16px;
+}
+
+.latest-cars-section .empty-div {
+    background-color: #4E4FFA;
+    color: #4E4FFA;
+    height: 2px;
+    margin: 2rem 50rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 11rem 10rem;
+    gap: 70px;
+}
+
+.latest-cars-section .grid h3 {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+.latest-cars-section .grid p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.latest-cars-section .grid button {
+    padding: 20px 40px;
+    border: none;
+    background-color: #4E4FFA;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
 }
