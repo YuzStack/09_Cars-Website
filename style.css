@@ -172,7 +172,7 @@ header {
 }
 
 
-/* Fourth Section (latest cars section) Styling */
+/* Fourth Section (Latest Cars Section) Styling */
 .latest-cars-section {
     background-color: #F8F9FB;
     color: #444A57;
@@ -219,4 +219,37 @@ header {
     color: white;
     font-size: 1.1rem;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Fifth Section (Featured Cars Section) Styling*/
+
+.featured-cars {
+    color: #444A57;
+}
+
+.featured-cars .heading {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.featured-cars .heading h3 {
+    font-size: 2.1rem;
+    margin-top: 16px;
+}
+
+.featured-cars .empty-div {
+    background-color: #4E4FFA;
+    color: #4E4FFA;
+    height: 2px;
+    margin: 2rem 50rem;
+}
+
+.featured-cars .cards-container {
+    padding: 5rem 11rem 10rem;
+}
+
+.featured-cars .cards-container h4 {
+    font-family: Verdana;
 }
