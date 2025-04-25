@@ -248,6 +248,34 @@ header {
 
 .featured-cars .cards-container {
     padding: 5rem 11rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.featured-cars .cards-container .individual-cards {
+    margin-bottom: 3rem;
+}
+
+.featured-cars .cards-container .individual-cards .car-border {
+    border: #444A57 0.1px solid;
+    margin-bottom: 2rem;
+}
+
+.featured-cars .cards-container img {
+    padding: 4rem 3rem;
+    height: 225px;
+    /* width: 200px; */
+}
+
+.featured-cars .cards-container .exception {
+    padding: 3.3rem;
+}
+
+.featured-cars .cards-container .inside-box {
+    padding: 1rem;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
 .featured-cars .cards-container h4 {
