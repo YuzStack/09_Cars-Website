@@ -265,7 +265,6 @@ header {
 .featured-cars .cards-container img {
     padding: 4rem 3rem;
     height: 225px;
-    /* width: 200px; */
 }
 
 .featured-cars .cards-container .exception {
@@ -280,4 +279,9 @@ header {
 
 .featured-cars .cards-container h4 {
     font-family: Verdana;
+    margin-bottom: 1rem;
+}
+
+.featured-cars .cards-container .individual-cards .outside-box {
+    margin-top: 10px;
 }
