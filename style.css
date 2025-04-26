@@ -75,7 +75,7 @@ header {
 }
 
 
-/* Options section styling */
+/* Options Section (Second Section) Styling */
 .options {
     background-color: white;
     margin: -5rem 10rem 5rem;
@@ -283,5 +283,64 @@ header {
 }
 
 .featured-cars .cards-container .individual-cards .outside-box {
+    margin-top: 10px;
+}
+
+
+/* Sixth Section (Clients Reviews Section) Styling */
+.clients-reviews {
+    background-color: #F8F9FB;
+    color: #444A57;
+}
+
+.clients-reviews .heading {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.clients-reviews .heading h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.clients-reviews .empty-div {
+    background-color: #4E4FFA;
+    color: #4E4FFA;
+    height: 2px;
+    margin: 2rem 50rem;
+}
+
+.clients-reviews .cards-container {
+    padding: 5rem 11rem 10rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.clients-reviews .cards-container .individual-cards {
+    border: 0.1px #444A57 solid;
+    height: 25rem;
+    padding: 3rem 2.9rem 5rem;
+}
+
+.clients-reviews .cards-container .individual-cards:hover {
+    background-color: #4E4FFA;
+    color: white;
+}
+
+.clients-reviews .cards-container .individual-cards img {
+    margin-bottom: 2.2rem;
+    padding: 0 8rem;
+}
+
+.clients-reviews .cards-container .individual-cards p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.clients-reviews .cards-container .individual-cards h4 {
+    text-align: center;
+}
+
+.clients-reviews .cards-container .individual-cards .city {
     margin-top: 10px;
 }
