@@ -344,3 +344,11 @@ header {
 .clients-reviews .cards-container .individual-cards .city {
     margin-top: 10px;
 }
+
+
+/* Brands Section (Seventh Section) Styling */
+.brands {
+    padding: 8rem 14rem;
+    display: flex;
+    gap: 5rem;
+}
