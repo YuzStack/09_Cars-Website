@@ -75,7 +75,7 @@ header {
 }
 
 
-/* Options Section (Second Section) Styling */
+/* Options Section (Overlaying/Second Section) Styling */
 .options {
     background-color: white;
     margin: -5rem 10rem 5rem;
@@ -351,4 +351,84 @@ header {
     padding: 8rem 14rem;
     display: flex;
     gap: 5rem;
+}
+
+
+/* Footer Styling */
+footer {
+    padding: 5rem 10rem;
+    background-color: #2A2D54;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+
+.flex-container h2 {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.flex-container h4 {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    width: 18rem;
+    font-weight: 500;
+}
+
+.flex-container p {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.flex-container li {
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex-container .flex-lists {
+    display: flex;
+    gap: 4rem;
+}
+
+.flex-container .flex-lists li {
+    margin-bottom: 20px;
+}
+
+.flex-container button {
+    background-color: #303357;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: rgba(2, 2, 2, 0.5) 0 0 5px;
+     cursor: pointer;
+}
+
+.Copyright {
+    margin-top: 1.3rem;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Copyright a {
+    color: rgb(204, 113, 204);
+}
+
+footer .contact-icons svg {
+    background-color: gray;
+    padding: 3px;
+    border-radius: 5px;
 }
