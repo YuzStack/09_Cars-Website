@@ -17,16 +17,25 @@ header {
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: black;
     color: white;
-    padding: 2rem 15rem;
+    padding: 2rem;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
 }
 
 .main-nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
+
+    @media (max-width: 530px) {
+        flex-wrap: wrap;
+    }
 }
 
 .main-nav a {
@@ -42,17 +51,26 @@ header {
     color: rgb(40, 40, 242);
 }
 
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .hero-section {
     text-align: center;
     color: white;
-    padding: 20rem;
+    padding: 20px;
 }
 
 .hero-section h1 {
     text-transform: uppercase;
     font-size: 3rem;
-    width: 63vw;
-    text-align: center;
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+    }
 }
 
 .hero-section p {
@@ -78,18 +96,37 @@ header {
 /* Options Section (Overlaying/Second Section) Styling */
 .options {
     background-color: white;
-    margin: -5rem 10rem 5rem;
+    margin: -3rem 2rem 3rem;
     padding: 0 5rem 2rem;
     border-radius: 10px;
     box-shadow: rgba(2, 2, 2, 0.5) 0 0 10px;
     display: grid;
-    grid-template-columns: 85% 15%;
     color: #444A57;
+
+    @media (min-width: 700px) {
+        margin: -5rem 10rem 5rem;
+    }
+
+    @media (min-width: 1450px) {
+        grid-template-columns: 85% 15%;
+    }
 }
 
 .options-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80vw;
+
+    @media (max-width: 699px) and (min-width: 490px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .individual-options {
@@ -102,7 +139,7 @@ header {
 
 .options select {
     background-color: #F8F8F8;
-    width: 230px;
+    width: 25vw;
     height: 50px;
     border-radius: 5px;
     border: none;
@@ -110,10 +147,18 @@ header {
     margin-top: 10px;
     padding: 12px;
     padding-right: 0;
+
+    @media (max-width: 489px) {
+        width: 35vw;
+    }
+
+    @media (min-width: 799px) {
+        width: 15vw;
+    }
 }
 
 .options button {
-    margin-top: 120px;
+    margin-top: 2rem;
     padding: 20px 50px;
     font-size: 18px;
     background-color: #4E4FFA;
@@ -123,15 +168,27 @@ header {
     cursor: pointer;
     max-height: 4rem;
     max-width: 10rem;
+
+    @media (min-width: 1450px) {
+        margin-top: 120px;
+    }
 }
 
 
 /* Third Section Styling */
 .cards {
-    margin: 5rem 10rem 8rem;
+    margin: 3rem 2rem 5rem;
     display: flex;
     gap: 30px;
     text-align: center;
+
+    @media (min-width: 1515px) {
+        margin: 5rem 10rem 8rem;
+    }
+
+    @media (max-width: 1514px) {
+        flex-wrap: wrap;
+    }
 }
 
 .cards h3 {
@@ -163,8 +220,9 @@ header {
 .unit-card .line-style {
     background-color: #4E4FFA;
     color: #4E4FFA;
-    margin: 2rem 13rem;
+    width: 5vw;
     height: 3px;
+    display: inline-block;
 }
 
 .unit-card .line-style:hover {
@@ -173,7 +231,7 @@ header {
 }
 
 
-/* Fourth Section (Latest Cars Section) Styling */
+/* Fourth Section (Newest Cars Section) Styling */
 .latest-cars-section {
     background-color: #F8F9FB;
     color: #444A57;
@@ -198,9 +256,26 @@ header {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5rem 11rem 10rem;
     gap: 70px;
+
+    @media (max-width: 1499px) {
+        padding: 5rem 2rem 10rem;
+    }
+
+    @media (min-width: 1500px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem 11rem 10rem;
+    }
+}
+
+@media (max-width: 1499px) {
+    .grid div {
+        max-width: 70vw;
+    }
+}
+
+.grid img {
+    max-width: 100%;
 }
 
 .latest-cars-section .grid h3 {
@@ -248,14 +323,36 @@ header {
 }
 
 .featured-cars .cards-container {
-    padding: 5rem 11rem 10rem;
+    padding: 5rem 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 35px;
+
+    @media (max-width: 1249px) and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem 3rem;
+    }
+
+    @media (max-width: 1499px) and (min-width: 1250px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 5rem 3rem;
+    }
+
+    @media (min-width: 1500px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 5rem 11rem 10rem;
+    }
 }
 
 .featured-cars .cards-container .individual-cards {
     margin-bottom: 3rem;
+
+    @media (max-width: 768px) and (min-width: 615px) {
+        width: 50vw;
+    }
+
+    @media (max-width: 614px) and (min-width: 585px) {
+        width: 50vw;
+    }
 }
 
 .featured-cars .cards-container .individual-cards .car-border {
@@ -266,6 +363,7 @@ header {
 .featured-cars .cards-container img {
     padding: 4rem 3rem;
     height: 225px;
+    max-width: 100%;
 }
 
 .featured-cars .cards-container .exception {
@@ -292,6 +390,7 @@ header {
 .clients-reviews {
     background-color: #F8F9FB;
     color: #444A57;
+    text-align: center;
 }
 
 .clients-reviews .heading {
@@ -312,14 +411,29 @@ header {
 }
 
 .clients-reviews .cards-container {
-    padding: 5rem 11rem 10rem;
-    display: flex;
+    display: grid;
     gap: 2rem;
+    margin: 2rem;
+
+    @media (max-width: 530px) {
+        padding: 3rem 2rem 4rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 4rem 3rem 5rem;
+    }
+
+    @media (max-width: 1549px) and (min-width: 1100px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1550px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .clients-reviews .cards-container .individual-cards {
     border: 0.1px #444A57 solid;
-    height: 25rem;
     padding: 3rem 2.9rem 5rem;
 }
 
@@ -330,7 +444,6 @@ header {
 
 .clients-reviews .cards-container .individual-cards img {
     margin-bottom: 2.2rem;
-    padding: 0 8rem;
 }
 
 .clients-reviews .cards-container .individual-cards p {
@@ -349,9 +462,17 @@ header {
 
 /* Brands Section (Seventh Section) Styling */
 .brands {
-    padding: 8rem 14rem;
     display: flex;
     gap: 5rem;
+    padding: 2rem;
+
+    @media (min-width: 1500px) {
+        padding: 8rem 14rem;
+    }
+
+    @media (max-width: 1450px) {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -360,17 +481,26 @@ footer {
     padding: 5rem 10rem;
     background-color: #2A2D54;
     color: white;
+
+    @media (max-width: 600px) {
+        padding: 3rem;
+    }
 }
 
 .flex-container {
     display: flex;
     gap: 3rem;
     margin-bottom: 10rem;
+
+    @media (max-width: 1300px) {
+        flex-wrap: wrap;
+    }
 }
 
 .flex-container h2 {
     margin-bottom: 3rem;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .flex-container h4 {
@@ -421,7 +551,17 @@ footer {
     margin-top: 1.3rem;
     font-size: 14px;
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
+
+    @media (max-width: 560px) {
+        flex-wrap: wrap;
+    }
+}
+
+.contact-icons {
+    display: flex;
+    gap: 5px;
 }
 
 .Copyright a {
