@@ -157,6 +157,7 @@ header {
 .unit-card:hover {
     background-color: #4E4FFA;
     color: white;
+    transition-duration: 0.4s;
 }
 
 .unit-card .line-style {
